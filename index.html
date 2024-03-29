@@ -3,67 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biology Notes Hub</title>
+  <title>Daniel D'Souza</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Lottie Player Script -->
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <!-- Custom CSS -->
-  <style>
-    body {
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-    }
-    .navbar {
-      background-color: #ffffff;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .navbar-brand {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .navbar-nav .nav-link {
-      font-size: 1.1rem;
-      color: #333333;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #007bff;
-    }
-    .welcome-text {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .topics-list {
-      list-style: none;
-      padding: 0;
-    }
-    .topics-list li {
-      margin-bottom: 10px;
-    }
-    .topics-list a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .topics-list a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Biology Notes Hub</a>
+      <a class="navbar-brand" href="index.html">Daniel D'Souza</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="topics.html">Topics</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="biologynotes.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Biology Notes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="gizmo.html">Gizmo</a>
+                <a class="dropdown-item" href="topics.html">Extended Response</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -82,8 +49,8 @@
       <!-- Welcome Text -->
       <div class="col-lg-6">
         <div class="welcome-text">
-          <h1>Welcome to Biology Notes Hub</h1>
-          <p>Explore our biology notes organized by topics. Click on a topic to view related notes.</p>
+          <h1>😄 Welcome!</h1>
+          <p class="lead">This is my website</p>
         </div>
       </div>
       <!-- Lottie Animation -->
@@ -92,27 +59,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Topics Section -->
-  <section id="topics" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Topics</h2>
-      <ul class="topics-list">
-        <li><a href="#cell-biology">Topic 1: Cell Biology</a></li>
-        <li><a href="#molecular-biology">Topic 2: Molecular Biology</a></li>
-        <li><a href="#genetics">Topic 3: Genetics</a></li>
-        <li><a href="#ecology">Topic 4: Ecology</a></li>
-        <li><a href="#evolution-biodiversity">Topic 5: Evolution and Biodiversity</a></li>
-        <li><a href="#human-physiology">Topic 6: Human Physiology</a></li>
-        <li><a href="#nucleic-acids">Topic 7: Nucleic Acids</a></li>
-        <li><a href="#metabolism-respiration-photosynthesis">Topic 8: Metabolism, Cell Respiration & Photosynthesis</a></li>
-        <li><a href="#plant-biology">Topic 9: Plant Biology</a></li>
-        <li><a href="#genetics-evolution">Topic 10: Genetics and Evolution</a></li>
-        <li><a href="#animal-physiology">Topic 11: Animal Physiology</a></li>
-        <!-- Add more topics as needed -->
-      </ul>
-    </div>
-  </section>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

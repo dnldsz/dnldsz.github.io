@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizmo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel D'Souza</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lottie Player Script -->
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="padding-left: 20px; padding-right: 20px;">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Daniel D'Souza</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="terms.html">Terms and Conditions</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="biologynotes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="biologynotes.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Biology Notes
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item bg-dark text-light" href="gizmo.html">Gizmo</a></li>
-              <li><a class="dropdown-item" href="markschemenotes.html">Markscheme Notes</a></li>
-            </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="gizmo.html">Gizmo</a>
+                <a class="dropdown-item" href="topics.html">Extended Response</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
-</nav>
-
-<div class="container text-start">
-    <div class="row">
-        <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-2 pt-3 lead">
-            <h1>Gizmo</h1>
-            <p>Gizmo is an online flashcard platform that utilises Artifical Intelligence to support active recall and spaced reptetion processes. Using Gizmo provides users with advantages over alternative programs through features such as:</p>
-            <ul>
-                <li>Easy flashcard generation from just a document of your notes.</li>
-                <li>No ads.</li>
-                <li>Streak, XP, and leaderboard incentivisation.</li>
-                <li>Additional AI generated questions.</li>
-            </ul>
-            <p>I have created 2 decks for biology which can be found below. The first deck is intended to ensure you know all the topic content, and the second deck is speccific to extended response markschemes.</p>
+  </nav>
+  <div class="container mt-5">
+    <h1>Gizmo</h1>
+    <p>
+        Gizmo is an online flashcard platform that utilizes Artificial Intelligence to support active recall and spaced repetition processes. Using Gizmo provides users with advantages over alternative programs through features such as:
+    </p>
+    <ul>
+        <li>Easy flashcard generation from just a document of your notes.</li>
+        <li>No ads.</li>
+        <li>Streak, XP, and leaderboard incentivization.</li>
+        <li>Additional AI-generated questions.</li>
+    </ul>
+    <p>I have two decks available for biology:</p>
+    <!-- Website Links -->
+    <div class="row mt-4 pb-5">
+        <div class="col-md-6 pb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Topics Deck</h3>
+                    <p class="card-text">
+                        Based on syllabus understandings.
+                    </p>
+                    <a href="https://gizmo.ai/deck/976491?p=KQqgx7YdUwM&t=1&deckName=Biology&deckColour=35b290&senderName=dnldsz" target="_blank" class="btn btn-primary">🔓 Access Deck</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row pb-5">
-        <div class="d-grid offset-2 col-4">
-            <a class="btn btn-primary" href="https://gizmo.ai/deck/976491?p=KQqgx7YdUwM&t=1&deckName=Biology&deckColour=35b290&senderName=dnldsz" role="button">Topic Deck</a>
-        </div>
-        <div class="d-grid col-4">
-            <a class="btn btn-primary disabled" href="#" role="button">⏰ Markscheme Deck</a>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Exam Deck</h3>
+                    <p class="card-text">
+                        Based on markschemes.
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-primary disabled">🔓 Access Deck</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
- </body>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
