@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel D'Souza</title>
+  <title>Biology Notes - Daniel D'Souza</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Lottie Player Script -->
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
@@ -23,39 +22,46 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="biologynotes.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              Biology Notes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="gizmo.html">Gizmo</a>
-                <a class="dropdown-item" href="topics.html">Extended Response</a>
-            </div>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="tutoring.html">Tutoring</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="Contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content Section -->
-  <div class="container mt-5">
+  
+  <div class="container mt-2">
     <div class="row">
-      <!-- Welcome Text -->
-      <div class="col-lg-6 text-center">
-        <div class="welcome-text">
-          <h1>😄 Welcome!</h1>
-          <p class="lead">This is my website</p>
+      <!-- Study Info -->
+      <div class="col-md-6">
+        <h1>Studying for Biology?</h1>
+        <p>
+            Here are my Gizmo flashcards where you can Artificial Intelligence to support active recall and spaced repetition processes!
+        </p>
+        <!-- Website Links -->
+        <div class="row mt-4">
+          <div class="col-md-6 pb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Syllabus Points</h5>
+                <a href="https://gizmo.ai/deck/976491?p=KQqgx7YdUwM&t=1&deckName=Biology&deckColour=35b290&senderName=dnldsz" target="_blank" class="btn btn-primary btn-sm">🔓 Access Deck</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Extended Response</h5>
+                <a href="topics.html" class="btn btn-primary btn-sm disabled">🔓 Access Deck</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Lottie Animation -->
-      <div class="col-lg-6">
-        <dotlottie-player src="https://lottie.host/a956a3d1-d3f2-4b75-8f07-8ea5ff55d24d/PSJS7RToSX.json" background="transparent" speed="1" style="width:100%; height: auto;" direction="1" playMode="normal" loop autoplay class="text-center"></dotlottie-player>
+      <div class="col-md-6 pt-3">
+        <dotlottie-player src="https://lottie.host/5c5f3118-92b4-48b0-af06-28e51080193b/sW73rBf73w.json" background="transparent" speed="1" style="width:100%; height: auto;" direction="1" playMode="normal" loop autoplay class="text-center"></dotlottie-player>
       </div>
     </div>
   </div>
