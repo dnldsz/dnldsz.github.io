@@ -3,226 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel D'Souza</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Lottie Player Script -->
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <title>Statonic - Where Media Meets Artificial Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkGray: '#1a1a1a',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Daniel D'Souza</a>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          
-        </ul>
-      </div>
+<body class="bg-black text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <!-- Background gradient effect -->
+    <div class="absolute inset-0 bg-gradient-to-br from-darkGray to-black"></div>
+    
+    <!-- Abstract blue shape similar to the image, using SVG -->
+    <div class="absolute inset-0 -z-10 opacity-30" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 800">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0026ff" />
+            <stop offset="100%" stop-color="#0066ff" />
+          </linearGradient>
+        </defs>
+        <path d="M0,400 Q300,100 600,500 T1200,300 V800 H0 Z" fill="url(#gradient)" />
+      </svg>
     </div>
-  </nav>
-
-<section>  
-  <div class="container">
-    <div class="row">
-      <!-- Study Info -->
-      <div class="col-md-6">
-        <h1>Studying for Biology?</h1>
-        <p>
-            Here are my Gizmo flashcards where you can use Artificial Intelligence to support active recall and spaced repetition processes!
-        </p>
-        <!-- Website Links -->
-        <div class="row mt-4">
-          <div class="col-md-6 pb-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Syllabus Points</h5>
-                <a href="https://gizmo.ai/deck/976491?p=KQqgx7YdUwM&t=1&deckName=Biology&deckColour=35b290&senderName=Daniel%20D%27Souza&numDeckCards=1" target="_blank" class="btn btn-primary btn-sm">🔓 Access Deck</a>
-              </div>
-            </div>
+    
+    <!-- Content Container -->
+    <div class="relative z-10">
+      <!-- Simple Header with Logo -->
+      <header class="absolute inset-x-0 top-0 z-50">
+        <div class="flex items-center p-6 lg:px-8">
+          <div class="flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Statonic</span>
+              <img class="h-10 w-auto invert" src="LogoBlack.svg" alt="Statonic">
+            </a>
           </div>
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Extended Response</h5>
-                <a href="https://gizmo.ai/deck/3710354?p=HbVFPR4fj2o&t=1&deckName=Biology%20Extended%20Response&deckColour=D37FFC&senderName=Daniel%20D%27Souza&numDeckCards=1" target="_blank" class="btn btn-primary btn-sm">🔓 Access Deck</a>
-              </div>
+        </div>
+      </header>
+      
+      <!-- Hero Content -->
+      <div class="px-6 pt-16 pb-24 lg:px-8">
+        <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <h1 class="text-5xl font-bold tracking-tight text-balance sm:text-7xl">
+              Elevating brands to thrive <span class="inline-block">in a digital world.</span>
+            </h1>
+            <p class="mt-8 text-xl font-light text-pretty text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Where media meets artificial intelligence. Transforming creative boundaries and redefining what's possible in the digital landscape.
+            </p>
+            <div class="mt-12 flex items-center justify-center gap-x-6">
+              <a href="#" class="rounded-md bg-blue-600 px-5 py-3 text-base font-medium text-white shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                Explore Our Work
+              </a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white transition-colors duration-300">
+                Learn More <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>
-        <button class="w-100 btn btn-sm btn-outline-secondary mt-1" onclick="scrollToTopicsCovered()">See What Topics Have Been Covered</button>
-      </div>
-      <!-- Lottie Animation -->
-      <div class="col-md-6 pt-md-5 pt-sm-0">
-        <dotlottie-player src="https://lottie.host/5c5f3118-92b4-48b0-af06-28e51080193b/sW73rBf73w.json" background="transparent" speed="1" style="width:100%; height: auto;" direction="1" playMode="normal" loop autoplay class="text-center"></dotlottie-player>
       </div>
     </div>
   </div>
-</section>
-  <!-- "There's more..." Section -->
-  <section id="more-resources">
-    <div class="container">
-        <h1 class="text-center">There's more...</h1>
-        <div class="row mt-4">
-          <!-- Resource Card 1 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <span class="display-2 m-0">⭐️</span>
-                <h5 class="card-title">Economics Gizmo</h5>
-                <p class="card-text">Definitions and things to remember.</p>
-                <a href="#" class="btn btn-outline-primary btn-block mt-3 disabled">Coming Soon</a>
-              </div>
-            </div>
-          </div>
-          <!-- Resource Card 2 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <span class="display-2 m-0">🧪</span>
-                <h5 class="card-title">Chemistry Notes</h5>
-                <p class="card-text">Coming soon. Coming soon.</p>
-                <a href="#" class="btn btn-outline-primary btn-block disabled mt-3">Coming Soon</a>
-              </div>
-            </div>
-          </div>
-          <!-- Resource Card 3 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <span class="display-2 m-0">❓</span>
-                <h5 class="card-title">Coming Soon</h5>
-                <p class="card-text">Coming soon. Coming soon.</p>
-                <a href="#" class="btn btn-outline-primary btn-block disabled mt-3">Coming Soon</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section id="topics-covered" class="mt-5">
-    <div class="container">
-        <h1 class="text-center">Biology Topics Covered</h1>
-        <p>The biology extended response flashcards cover all Standard Level and Higher Level content whereas the syllabus points flashcards do not. Here is a list of all topics covered in the 'Syllabus Points' flashcards:</p>
-      <table class="table table-striped mt-4">
-        <thead>
-          <tr>
-            <th scope="col">Topic</th>
-            <th scope="col">Covered</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Topic 1: Cell Biology</td>
-            <td>
-                <ul>
-                    <li>1.2 Ultrastructure of Cells</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 2: Molecular Biology</td>
-            <td>
-                <ul>
-                    <li>2.3 Carbohydrates and Lipids</li>
-                    <li>2.4 Proteins</li>
-                    <li>2.5 Enzymes</li>
-                    <li>2.6 Structure of DNA and RNA</li>
-                    <li>2.9 Cell Respiration</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 3: Genetics</td>
-            <td>
-                <ul>
-                    <li>3.3 Meiosis</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 4: Ecology</td>
-            <td>Not covered.</td>
-          </tr>
-          <tr>
-            <td>Topic 5: Evolution and Biodiversity</td>
-            <td>
-                <ul>
-                    <li>5.1 Evidence for Evolution</li>
-                    <li>5.2 Natural Selection</li>
-                    <li>5.3 Classification of Biodiversity</li>
-                    <li>5.4 Cladistics</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 6: Human Physiology</td>
-            <td>
-                <ul>
-                    <li>6.3 Defence Against Infectious Disease</li>
-                    <li>6.4 Gas Exchange</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 7: Nucleic Acids</td>
-            <td>
-                <ul>
-                    <li>7.1 DNA Structure and Replication</li>
-                    <li>7.2 Transcription and Gene Expression</li>
-                    <li>7.3 Translation</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 8: Metabolism, Cell Respiration & Photosynthesis</td>
-            <td>Not covered.</td>
-          </tr>
-          <tr>
-            <td>Topic 9: Plant Biology</td>
-            <td>
-                <ul>
-                    <li>9.1 Xylem Transport</li>
-                    <li>9.3 Growth in Plants</li>
-                    <li>9.4 Reproduction in Plants</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 10: Genetics and Evolution</td>
-            <td>
-                <ul>
-                    <li>10.3 Gene Pools and Speciation</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>Topic 11: Animal Physiology</td>
-            <td>
-                <ul>
-                    <li>11.1 Antibody Production and Vaccination</li>
-                </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script>
-    function scrollToTopicsCovered() {
-      document.getElementById('topics-covered').scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-
 </body>
 </html>
