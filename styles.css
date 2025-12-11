@@ -7,6 +7,14 @@ html {
     color-scheme: light dark;
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
+    background-color: var(--color-global-bg);
+}
+
+/* Safe area insets for notch devices */
+body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* CSS Custom Properties for theming */
@@ -392,10 +400,16 @@ body {
     z-index: 150 !important;
 }
 
-/* Mobile menu button */
+/* Mobile menu button - hidden on desktop */
 #toggle-navigation-menu {
     z-index: 200; /* Highest z-index to stay above menu */
     position: relative;
+}
+
+@media (min-width: 640px) {
+    #toggle-navigation-menu {
+        display: none;
+    }
 }
 
 /* Menu icon toggling */
@@ -415,19 +429,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 0.25rem;
+    border: 1px solid var(--color-accent);
     background: transparent;
     color: var(--color-accent);
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .icon-button:hover {
-    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
-    transform: scale(1.05);
+    background-color: var(--color-accent);
+    color: var(--color-global-bg);
 }
 
 .icon-button:active {
@@ -435,8 +449,8 @@ body {
 }
 
 .icon-button svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 /* Theme toggle styles */
@@ -860,11 +874,20 @@ body {
 }
 
 [data-theme="dark"] .client-logo-with-text {
-    filter: grayscale(100%) invert(1);
+    filter: grayscale(100%);
+    color: var(--color-global-text);
+}
+
+[data-theme="dark"] .client-logo-with-text .client-logo-icon {
+    filter: invert(1);
 }
 
 [data-theme="dark"] .client-logo-with-text:hover {
-    filter: grayscale(0%) invert(0);
+    filter: grayscale(0%);
+}
+
+[data-theme="dark"] .client-logo-with-text:hover .client-logo-icon {
+    filter: invert(0);
 }
 
 @media (max-width: 640px) {

@@ -50,7 +50,6 @@ I love turning complex problems into simple, scalable solutions—whether that's
 <span class="skills-label">AI/ML</span>
 <div class="skills-tags">
 <span class="skill-tag">PyTorch</span>
-<span class="skill-tag">OpenAI</span>
 <span class="skill-tag">CUDA</span>
 <span class="skill-tag">TensorRT</span>
 <span class="skill-tag">Triton</span>

@@ -20,11 +20,21 @@ class ThemeManager {
         this.theme = theme;
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-        
+
+        // Update theme-color meta tag for mobile browser chrome
+        const themeColor = theme === 'dark' ? '#3b3f4a' : '#f9fafb';
+        let metaThemeColor = document.querySelector('meta[name="theme-color"]:not([media])');
+        if (!metaThemeColor) {
+            metaThemeColor = document.createElement('meta');
+            metaThemeColor.name = 'theme-color';
+            document.head.appendChild(metaThemeColor);
+        }
+        metaThemeColor.content = themeColor;
+
         // Update theme toggle button aria-label
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
-            themeToggle.setAttribute('aria-label', 
+            themeToggle.setAttribute('aria-label',
                 theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'
             );
             // Update icon visibility explicitly to avoid any flash
