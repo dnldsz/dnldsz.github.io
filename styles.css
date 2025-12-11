@@ -849,11 +849,11 @@ body {
 }
 
 [data-theme="dark"] .client-logo-with-text {
-    filter: grayscale(100%);
+    filter: grayscale(100%) invert(1);
 }
 
 [data-theme="dark"] .client-logo-with-text:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0%) invert(0);
 }
 
 @media (max-width: 640px) {
