@@ -392,46 +392,57 @@ body {
     z-index: 150 !important;
 }
 
-/* Mobile menu button improvements */
+/* Mobile menu button */
 #toggle-navigation-menu {
     z-index: 200; /* Highest z-index to stay above menu */
     position: relative;
-    background-color: color-mix(in srgb, var(--color-accent-2) 10%, transparent);
-    border-radius: 0.375rem;
-    border: 1px solid color-mix(in srgb, var(--color-accent-2) 20%, transparent);
+}
+
+/* Menu icon toggling */
+#toggle-navigation-menu .menu-icon,
+#toggle-navigation-menu .close-icon {
     transition: opacity 0.2s ease;
 }
 
-#toggle-navigation-menu:hover {
-    background-color: color-mix(in srgb, var(--color-accent-2) 20%, transparent);
+#toggle-navigation-menu[aria-expanded="false"] .menu-icon { display: block; }
+#toggle-navigation-menu[aria-expanded="false"] .close-icon { display: none; }
+
+#toggle-navigation-menu[aria-expanded="true"] .menu-icon { display: none; }
+#toggle-navigation-menu[aria-expanded="true"] .close-icon { display: block; }
+
+/* Icon button styles */
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: var(--color-accent);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-button:hover {
+    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
     transform: scale(1.05);
 }
 
-/* Hamburger icon sizing and toggling */
-#toggle-navigation-menu svg {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.2s ease;
+.icon-button:active {
+    transform: scale(0.95);
 }
 
-#toggle-navigation-menu[aria-expanded="false"] svg:first-of-type { display: block; opacity: 1; }
-#toggle-navigation-menu[aria-expanded="false"] svg:last-of-type  { display: none;  opacity: 0; }
-
-#toggle-navigation-menu[aria-expanded="true"]  svg:first-of-type { display: none;  opacity: 0; }
-#toggle-navigation-menu[aria-expanded="true"]  svg:last-of-type  { display: block; opacity: 1; }
+.icon-button svg {
+    width: 22px;
+    height: 22px;
+}
 
 /* Theme toggle styles */
 #theme-toggle {
-    background-color: color-mix(in srgb, var(--color-accent-2) 20%, transparent);
-    border: 1px solid color-mix(in srgb, var(--color-accent-2) 30%, transparent);
-    transition: opacity 0.2s ease;
     z-index: 50;
     position: relative;
-}
-
-#theme-toggle:hover {
-    background-color: color-mix(in srgb, var(--color-accent-2) 30%, transparent);
-    transform: scale(1.05);
 }
 
 /* Theme icon visibility */
@@ -1015,19 +1026,7 @@ button:focus-visible {
         height: 24px;
     }
 
-    /* Larger touch targets */
-    #theme-toggle,
-    #toggle-navigation-menu {
-        min-width: 44px;
-        min-height: 44px;
-        padding: 0.5rem;
-    }
-    
-    /* Better touch feedback */
-    #toggle-navigation-menu:active,
-    #theme-toggle:active {
-        transform: scale(0.95);
-    }
+    /* Touch targets handled by .icon-button class */
     
     /* Improved header spacing on mobile */
     #main-header {
