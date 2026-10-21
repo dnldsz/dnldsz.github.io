@@ -19,56 +19,45 @@
   </div>
 </div>
 
-I build AI products and grow startups. Currently working on Statonic, a sovereign voice AI platform for regulated industries in Australia.
+Software engineering student at the University of Queensland (BE Hons, Liveris Academy Scholar). I like the layer where models meet hardware: I took a real-time TTS pipeline to an 80 ms time-to-first-token on TensorRT, trained a 13.7M-parameter state-space language model on 8×H100 for OpenAI's Parameter Golf, and run Statonic, a one-operator content studio where a GPU worker and a nightly agent post up to 26 videos a day.
 
-I've designed EdTech apps with 40K+ users, won 2 hackathons, and driven 150M+ impressions through social media marketing for startups from pre-seed to Series A.
-
-I love turning complex problems into simple, scalable solutions—whether that's code, content, or growth strategy.
+Three hackathon wins, including back-to-back firsts at the UQIES Weekend of Startups in 2025 and 2026. Selected for the engineering streams of Optiver Future Focus and IMC Launchpad in 2026.
 
 <div class="skills-section">
 <div class="skills-category">
 <span class="skills-label">Languages</span>
 <div class="skills-tags">
-<span class="skill-tag">Python</span>
-<span class="skill-tag">JavaScript</span>
-<span class="skill-tag">TypeScript</span>
 <span class="skill-tag">C</span>
+<span class="skill-tag">Python</span>
+<span class="skill-tag">TypeScript</span>
+<span class="skill-tag">Haskell</span>
 <span class="skill-tag">Java</span>
 <span class="skill-tag">Swift</span>
+<span class="skill-tag">AVR Assembly</span>
 </div>
 </div>
 <div class="skills-category">
-<span class="skills-label">Frameworks</span>
+<span class="skills-label">GPU & ML</span>
 <div class="skills-tags">
-<span class="skill-tag">React</span>
-<span class="skill-tag">Next.js</span>
-<span class="skill-tag">Node.js</span>
-<span class="skill-tag">React Native</span>
-</div>
-</div>
-<div class="skills-category">
-<span class="skills-label">AI/ML</span>
-<div class="skills-tags">
-<span class="skill-tag">PyTorch</span>
 <span class="skill-tag">CUDA</span>
 <span class="skill-tag">TensorRT</span>
 <span class="skill-tag">Triton</span>
-<span class="skill-tag">vLLM</span>
+<span class="skill-tag">PyTorch</span>
+<span class="skill-tag">NVENC</span>
+<span class="skill-tag">Whisper</span>
 </div>
 </div>
 <div class="skills-category">
-<span class="skills-label">Cloud</span>
+<span class="skills-label">Systems & Tools</span>
 <div class="skills-tags">
-<span class="skill-tag">AWS (EC2, S3, DynamoDB)</span>
-<span class="skill-tag">Azure (VMs)</span>
-</div>
-</div>
-<div class="skills-category">
-<span class="skills-label">Tools</span>
-<div class="skills-tags">
+<span class="skill-tag">Linux</span>
 <span class="skill-tag">Docker</span>
+<span class="skill-tag">Make</span>
 <span class="skill-tag">Git</span>
-<span class="skill-tag">Figma</span>
+<span class="skill-tag">Vim</span>
+<span class="skill-tag">FFmpeg</span>
+<span class="skill-tag">AWS (EC2, S3)</span>
+<span class="skill-tag">Model Context Protocol</span>
 </div>
 </div>
 </div>

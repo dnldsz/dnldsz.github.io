@@ -1,8 +1,6 @@
 # Startup Growth
 
-Produced viral Instagram Reels for startups from pre-seed to Series A, driving brand awareness and user acquisition.
-
-Beyond content creation, I've managed teams of interns to produce content at scale and led training seminars for funded startups on organic marketing strategy and content that converts.
+Before the studio was code, it was me. Hand-edited study content grew a personal account to over 200M views, then EdTech startups from pre-seed to Series A retained me to audit their organic strategy, train in-house brand teams, and recruit and manage creators for large-scale UGC campaigns. Relatide, an AI retention-calls product, won the Entain × UQIES Weekend of Startups Hackathon in 2025.
 
 <div class="clients-section">
 <span class="clients-label">Worked with</span>
@@ -16,19 +14,19 @@ Beyond content creation, I've managed teams of interns to produce content at sca
 
 <div class="stats-grid">
   <div class="stat-card">
-    <span class="stat-number">150M+</span>
-    <span class="stat-label">Impressions</span>
+    <span class="stat-number">400M+</span>
+    <span class="stat-label">Views</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">260K</span>
+    <span class="stat-label">Followers</span>
   </div>
   <div class="stat-card">
     <span class="stat-number">14</span>
     <span class="stat-label">Startups</span>
   </div>
   <div class="stat-card">
-    <span class="stat-number">$100K+</span>
-    <span class="stat-label">Ad Budgets Advised</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-number">250K</span>
-    <span class="stat-label">Followers Gained</span>
+    <span class="stat-number">26/day</span>
+    <span class="stat-label">Peak Posting Rate</span>
   </div>
 </div>
